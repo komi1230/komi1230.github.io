@@ -1,10 +1,67 @@
 body {
   font: 400 1em/1.5 "Neuton";
-  background: #090d00;
+  background: #202020;
   color: rgba(255, 255, 255, 0.25);
   text-align: center;
   margin: 0;
 }
+
+.follow-me {
+  list-style: none;
+  overflow: hidden;
+  margin: 0 0 0 auto;
+}
+.follow-me li {
+  float: left;
+  margin: 0 8px 8px 0;
+  padding: 0;
+}
+.follow-me li a::before {
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 16px;
+  height: 44px; /* Button height */
+  line-height: 44px; /* Button height */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+  width: 44px; /* Button width */
+}
+
+.follow-me li a:hover::before {
+  color: #fff;
+}
+
+.follow-me li a[href*="facebook.com"]::before {
+  content: "\f09a"; 
+}
+.follow-me li a[href*="github.com"]::before { 
+  content: "\f09b"; 
+}
+.follow-me li a[href*="linkedin.com"]::before { 
+  content: "\f0e1"; 
+}
+.follow-me li a[href*="twitter.com"]::before { 
+  content: "\f099"; 
+}
+
+.follow-me li a[href*="facebook.com"]:hover::before {
+  background-color: #3b5998; 
+}
+.follow-me li a[href*="github.com"]:hover::before { 
+  background-color: #0c0101; 
+}
+.follow-me li a[href*="linkedin.com"]:hover::before { 
+  background-color: #0077b5; 
+}
+.follow-me li a[href*="twitter.com"]:hover::before { 
+  background-color: #55acee; 
+}
+
 
 p {
   text-transform: uppercase;
@@ -13,11 +70,10 @@ p {
   border: 4px double rgba(255, 255, 255, 0.25);
   border-width: 4px 0;
   padding: 1.5em 0em;
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  width: 40em;
-  margin: 0 0 0 -20em;
+  text-align: center;
+  top: 30%;
+  display: inline-block;
+  margin: 5em auto;
 }
 p span {
   font: 700 4em/1 "Oswald", sans-serif;
