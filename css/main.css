@@ -1,6 +1,6 @@
 body {
   font: 400 1em/1.5 "Neuton";
-  background: #202020;
+  background: #1d1d1d;
   color: rgba(255, 255, 255, 0.25);
   text-align: center;
   margin: 0;
@@ -9,7 +9,7 @@ body {
 .follow-me {
   list-style: none;
   overflow: hidden;
-  margin: 0 0 0 auto;
+  margin: 2em 0 0 auto;
 }
 .follow-me li {
   float: left;
@@ -63,7 +63,7 @@ body {
 }
 
 
-p {
+main {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   display: inline-block;
@@ -71,11 +71,10 @@ p {
   border-width: 4px 0;
   padding: 1.5em 0em;
   text-align: center;
-  top: 30%;
   display: inline-block;
-  margin: 5em auto;
+  margin: 15% auto;
 }
-p span {
+main span {
   font: 700 4em/1 "Oswald", sans-serif;
   letter-spacing: 0;
   padding: 0.25em 0 0.325em;
@@ -93,6 +92,84 @@ p span {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
 }
+
+.aboutme {
+  background-color: #eee;
+  color: #000000;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  top: 105%;
+  padding-bottom: 15%;
+}
+
+.aboutme h1 {
+  font-family: monospace;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.name {
+  position: relative;
+  top: 20px;
+  font-size: 120%;
+  text-align: center;
+  line-height: 4px;
+}
+
+.name h2 {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.name h3 {
+  text-align: center;
+  font-size: 80%;
+  position: relative;
+}
+
+@media screen and (max-width: 499px) {
+  .photo_and_description {
+    position: relative;
+    margin-top: 15%;
+    text-align: center;
+    width: 95%;
+  }
+  .photo_and_description p {
+    text-align: center;
+    display: inline-block;
+    margin: 20px auto;
+    width: 90%;
+  }
+  .photo_and_description img {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto; 
+    width: 90%;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+  .photo_and_description {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 95%;
+  }
+  .photo_and_description p {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+  }
+  .photo_and_description img { 
+    display: inline-block;
+    width: 30%;
+    padding-top: 10%;
+    padding-left: 10%;
+  }
+}
+
 
 /* Animate Background Image */
 @-webkit-keyframes aitf {
