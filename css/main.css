@@ -104,7 +104,7 @@ main span {
   position: absolute;
   width: 100%;
   top: 105%;
-  padding-bottom: 30%;
+  padding-bottom: 45%;
 }
 
 .aboutme h1 {
@@ -157,8 +157,8 @@ main span {
     text-align: left;
     position: absolute;
     width: 100%;
-    top: 230%;
-    padding-bottom: 15%;
+    top: 220%;
+    padding-bottom: 35%;
   }
   .blog h1 {
     font-family: monospace;
